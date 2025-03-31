@@ -19,9 +19,9 @@ jobs:
 
     - name: Prepare the environment
       run: |
+        sudo apt update
         sudo apt -y install git-core git xmlstarlet 
         sudo apt-get install neofetch
-        sudo apt update
 
     - name: Clone vendor_hardware_overlay
       run: |
